@@ -1,0 +1,17 @@
+.pr-list {
+    list-style-type: none;
+}
+
+.pr-url {
+    margin: 1.5em;
+    font-size: 1rem;
+    text-align: center;
+    color: pink;
+    border: 10px solid pink;
+    border-image: repeating-linear-gradient( 45deg, pink, pink 1%, purple 1%, purple 8%) 10;
+}
+
+.welcome-text {
+    margin: 0 0.5em;
+    text-align: center;
+}
