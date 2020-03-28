@@ -13,6 +13,11 @@ const PRList = () => {
         setShowModal(true);
     }
 
+    const handleClick = (diffUrl) => {
+        setDiffUrl(diffUrl)
+        console.log(`clicked on ${diffUrl}`);
+    }
+
     const hideDiffModal = () => setShowModal(false);
 
     const [PRs, setPRs] = useState([]);
@@ -55,7 +60,7 @@ const PRList = () => {
           {showModal && <DiffModal onClickModal={hideDiffModal} diff={diff} />}
           {!showModal && PRs.length === 0 && <div className="no-data">no data yet...</div>}
           {!showModal && PRs.map(item => (
-            <PRUrlItem url={item.html_url} />
+            <PRUrlItem url={item.html_url} diffUrl={item.pull_request.diff_url} onClick={handleClick} />
           ))}
         </ul>
     );
