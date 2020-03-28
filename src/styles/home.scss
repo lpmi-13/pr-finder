@@ -4,11 +4,21 @@
 
 .pr-url {
     margin: 1.5em;
+    padding: 1em;
     font-size: 1rem;
     text-align: center;
-    color: pink;
     border: 10px solid pink;
-    border-image: repeating-linear-gradient( 45deg, pink, pink 1%, purple 1%, purple 8%) 10;
+    border-image: repeating-linear-gradient( 45deg, pink, #F0D078 1%, #1048A0 1%, purple 8%) 10;
+    background: #F0D078;
+}
+
+a {
+    color: black;
+}
+
+.no-data {
+    font-size: 3rem;
+    margin: 1em;
 }
 
 .welcome-text {
