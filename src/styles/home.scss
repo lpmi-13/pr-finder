@@ -1,3 +1,5 @@
+@import './mixins.scss';
+
 .pr-list {
     list-style-type: none;
 }
@@ -6,10 +8,14 @@
     margin: 1.5em;
     padding: 1em;
     font-size: 1rem;
+    border-radius: 1em;
     text-align: center;
-    border: 10px solid pink;
-    border-image: repeating-linear-gradient( 45deg, pink, #F0D078 1%, #1048A0 1%, purple 8%) 10;
-    background: #F0D078;
+    background: #FFFF01;
+    box-shadow: 5px 5px 10px #660391;
+
+    @include respond-to("small") {
+        font-size: 1.75rem;
+    }
 }
 
 a {
@@ -19,9 +25,12 @@ a {
 .no-data {
     font-size: 3rem;
     margin: 1em;
+    color: #660391;
 }
 
 .welcome-text {
     margin: 0 0.5em;
     text-align: center;
+    color: #660391;
+    max-width: 10em;
 }
