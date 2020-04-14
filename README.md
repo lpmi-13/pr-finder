@@ -1,6 +1,6 @@
 # PR Finder
 
-live demo (that doesn't work yet): [https://pr-finder.netlify.com](https://pr-finder.netlify.com)
+live demo: [https://pr-finder.netlify.com](https://pr-finder.netlify.com)
 
 Sometimes, people are working on side projects and have no way to get any feedback
 on what they're doing.
